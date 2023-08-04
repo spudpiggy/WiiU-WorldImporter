@@ -1,7 +1,8 @@
-# What/Why
-I decided to look into Minecraft LCE's .ext files cus I want to see if it would be possible to generate them.
-The inject method is quite annoying, esp on real hardware.
-Turns out the format's dead simple, just worldname, some garbage data, and then the thumbnail as a PNG.
-World options are stored in the thumbnail's metadata lol.
-Even if you import a PNG without metadata it'll still show up in the game, so I decided i should make this repo and try and make something happen.
-I believe PS3 uses the ext format as well, probably most LCEs do so this could be adapted.
+# What
+This is a tool that generates .ext files to go along with Minecraft: Wii U Edition save files.
+It will eventually be able to manage saves on a real Wii U or an instance of Cemu.
+
+#Requirements
+You will need mcwiiu on either a modded Wii U with the FTPiiU plugin OR in Cemu.
+Pillow is required by the EXT generation code to check thumbnail dimensions.
+`python -m pip install pillow`
